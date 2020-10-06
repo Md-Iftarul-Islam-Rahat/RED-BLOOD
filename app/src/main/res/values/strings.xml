@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">BLOOD BANK</string>
+    <string name="donorInfo_text">Your Details will be public to the community,
+        by using this app you also need to pledge to be a donor to help those
+        who are in need</string>
+    <string name="invalid_name">Please Enter valid Name</string>
+    <string name="invalid_email">Enter a valid email</string>
+    <string name="invalid_numder">Please Enter a valid Number</string>
+
+</resources>

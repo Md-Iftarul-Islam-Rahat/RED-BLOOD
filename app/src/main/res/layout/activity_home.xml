@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blood"
+    android:orientation="vertical"
+    tools:context="activities.HomeActivity">
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="90dp"
+        android:text="RED BLOOD"
+        android:textColor="@color/colorWhite"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textAllCaps="true"/>
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imageView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:srcCompat="@drawable/welcome_user"-->
+<!--        android:scaleType="fitXY"/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/becomeBlDonorButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_margin="10dp"
+            android:text="Become a Blood Donor"
+            android:textColor="@color/colorRed" />
+
+
+        <Button
+            android:id="@+id/collectBlButton"
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_margin="10dp"
+            android:text="Collect Blood"
+            android:textColor="@color/colorRed" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

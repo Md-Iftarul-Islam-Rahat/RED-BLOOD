@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="activities.DonorInfoActivity">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:background="@drawable/blood"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/blood_donation" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Give Your Information"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"/>
+
+        <ScrollView
+            android:layout_width="417dp"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/layoutBottom2"
+                android:layout_width="match_parent"
+                android:layout_height="678dp"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical">
+
+
+
+                <EditText
+                    android:id="@+id/fullName"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColorHint="@color/colorWhite"
+                    android:layout_margin="15sp"
+                    android:hint="Full Name" />
+
+                <EditText
+                    android:id="@+id/nickName"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="15sp"
+                    android:textColorHint="@color/colorWhite"
+                    android:hint="Nick Name" />
+
+                <EditText
+                    android:id="@+id/donorEmail"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColorHint="@color/colorWhite"
+                    android:layout_margin="15sp"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress" />
+
+
+                <EditText
+                    android:id="@+id/dob"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="15sp"
+                    android:textColorHint="@color/colorWhite"
+                    android:hint="Date of birth"
+                    android:inputType="text" />
+
+                <EditText
+                    android:id="@+id/gender"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="15sp"
+                    android:textColorHint="@color/colorWhite"
+                    android:hint="Gender" />
+
+                <EditText
+                    android:id="@+id/bloodGroup"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="15sp"
+                    android:textColorHint="@color/colorWhite"
+                    android:hint="Blood Group"
+                    android:inputType="text" />
+                <EditText
+                    android:id="@+id/phone"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColorHint="@color/colorWhite"
+                    android:layout_margin="15sp"
+                    android:hint="Phone Number"/>
+
+
+                <EditText
+                    android:id="@+id/address"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColorHint="@color/colorWhite"
+                    android:layout_margin="15sp"
+                    android:hint="Address" />
+
+                <EditText
+                    android:id="@+id/country"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="15sp"
+                    android:textColorHint="@color/colorWhite"
+                    android:hint="Country" />
+
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:textSize="25sp"
+                    android:padding="10dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorWhite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/donorInfo_text"/>
+
+
+                <Button
+                    android:id="@+id/donorSave"
+                    android:layout_width="273dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:text="Become a Donor"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorRed" />
+
+
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>
